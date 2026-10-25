@@ -61,9 +61,30 @@ If it goes wrong: "This account isn't active on the network yet. Activate it bel
 
 ## 1. Changemaker creates the activity
 
-- Who: B. Where: `/cm/activities/new?mode=form` (or "Use the form instead" on the first screen; the default is a voice interview with Niaa, which needs a microphone).
-- Required: Title, Description, theme, "I want more of", "I want less of", "Compass indicator" and "Unit". For funding choose "Funding wanted" and fill "Budget needed". There is no location field, so put the place in the Description.
-- Paste this:
+- Who: B. Where: `/cm/activities/new`.
+- **Talk to Niaa (default, recommended for the demo).** The page opens "Tell Niaa about your activity": a short chat where Niaa asks, you answer, and the activity fills in as you talk. Use a current Chrome, Edge, Safari or Firefox and allow the microphone.
+  1. Click "Start talking" and allow the microphone when the browser asks.
+  2. Answer Niaa's questions in your own words. "Hold to talk" if the button shows; otherwise Niaa listens automatically. The panel "Your activity so far" fills in and counts the "things still needed".
+  3. When it shows "Everything needed is there", click "Review your activity". On "Check your activity" correct anything, then click "Create activity".
+- **Form (when time is tight).** The voice chat takes a few minutes. For a faster demo click "Use the form instead" on the first screen (or open `/cm/activities/new?mode=form`) and paste the values from the table below. The form is also the fallback when the microphone is blocked or the voice service is not reachable; what you told Niaa so far is kept as a draft.
+- The result is the same either way: "Your activity is created". There is no separate publish step; creating makes it live for sponsors with the same theme.
+
+**Example answers for the voice chat** (say them in your own words; one or two sentences per answer is enough):
+
+| Niaa asks about       | You say                                                                                                                                                            |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Your activity         | "I'm Amani, a community organiser near Nampula in northern Mozambique. We want to drill three wells for three villages, so families stop walking hours for water." |
+| What you want more of | "Families with clean water within ten minutes of home, and more time for children to be in school."                                                                |
+| What you want less of | "Hours spent walking to fetch water, and illness from unsafe water."                                                                                               |
+| Concrete ideas        | "First a site survey and a community meeting, then we drill and test the first well, then the second and third."                                                   |
+| How you measure it    | "The number of wells drilled and tested."                                                                                                                          |
+| Money                 | "We need ten thousand dollars, and we can only start once it is funded."                                                                                           |
+| When                  | "We'd like to start in two weeks."                                                                                                                                 |
+| Why you               | "My village walked four hours a day for water when I was a child. I've organised two community projects and I know the local drilling crews."                      |
+
+Shorter voice example: "I run a night school in a village near Beira. We have no light after six. I want to buy 40 solar lamps and a charging station, for 800 dollars. I want more evenings with light to study, and fewer candles and kerosene. I'd count the lamps in use."
+
+**Example values for the form.** Required fields: Title, Description, theme (at least one), "I want more of", "I want less of", "Compass indicator" and "Unit". For funding choose "Funding wanted" and fill "Budget needed". There is no location field, so put the place in the Description.
 
 | Field                        | Value                                                                                                                                                                                            |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -81,10 +102,10 @@ If it goes wrong: "This account isn't active on the network yet. Activate it bel
 | Why I want to do this (opt.) | My village walked four hours a day for water when I was a child.                                                                                                                                 |
 | Why I can do this (opt.)     | I have organised two community projects and know the local drilling crews.                                                                                                                       |
 
-- Shorter alternative: Title "Solar lamps for a night school"; Description "A night school in a village near Beira has no light after six. We buy 40 solar lamps and a charging station."; "I want more of": "Evenings with light to study."; "I want less of": "Candles and kerosene."; Compass indicator "Lamps in use", Unit "Count (#)"; Funding wanted; Budget 800.
-- Click "Create activity". The page shows "Your activity is created". There is no separate publish step.
+- Shorter form example: Title "Solar lamps for a night school"; Description "A night school in a village near Beira has no light after six. We buy 40 solar lamps and a charging station."; "I want more of": "Evenings with light to study."; "I want less of": "Candles and kerosene."; Compass indicator "Lamps in use", Unit "Count (#)"; Funding wanted; Budget 800.
+- Click "Create activity". The page shows "Your activity is created".
 
-If it goes wrong: "Some fields need your attention" highlights the first bad field. Type the budget without thousands separators (`10000`).
+If it goes wrong: "Some fields need your attention" highlights the first bad field. Type the budget without thousands separators (`10000`). Voice: "Niaa cannot hear you" = allow the microphone for the site, then "Try again". "The connection dropped" or "The conversation paused" = "Continue talking". "Niaa is not available right now" = "Try again". "Daily limit reached" = finish with the form. In every case the draft is kept.
 
 ## 2. Sponsor commits
 
