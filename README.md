@@ -116,12 +116,13 @@ If it goes wrong: "Some fields need your attention" highlights the first bad fie
 ## 2. Sponsor commits
 
 - Who: A. Where: `/funder/activities`. Open "Three wells for villages near Nampula" (filter by theme or "Awaiting funding" if needed) and click "Sponsor this activity".
-- "Your contribution": the activity asks for 10,000, but on testnet keep the live amount small: commit **8**. With the Detailed plan the sponsor locks 8.80 (8 plus the 10% fee). The summary shows "Your contribution" (100% to the activity), "Niaa platform fee (10%)" and "Total you pay".
 - Reporting plan:
   - **Detailed**: add deliverables whose amounts add up to your contribution, for example "Site survey, first well drilled and tested" and "Second and third wells drilled and tested".
   - **Simple**: one final report and one final milestone holding the whole amount, no platform fee.
+- "Your contribution": the activity asks for 10,000, but on testnet keep the live amount small: commit **8**. With the Detailed plan the sponsor locks 8.80 (8 plus the 10% fee). The summary shows "Your contribution" (100% to the activity), "Niaa platform fee (10%)" and "Total you pay".
 - Conditions: leave the defaults (USDC, "Niaa (default)" settles disputes).
 - Click "Review commitment", then "Commit funding". You see "Funding committed" and a link to the sponsoring.
+- **Switch to the "Commitments" tab.** Back on the activity page the tabs read "About the project", "Commitments" and "Contact". Click "Commitments": "Your commitments" shows your budget, the Niaa fee and the total. "Open funding details" opens the sponsoring (`/funder/funding/<id>`), where every next step for the sponsor appears. If you still see "Your institution has no commitment to this activity yet", reload the page.
 - Other side: B's bell shows the new commitment. A sees "Waiting for <changemaker> to accept".
 
 If it goes wrong: the activity is not in the list = the themes differ (step 0). With Detailed, the milestone amounts must add up to the contribution.
