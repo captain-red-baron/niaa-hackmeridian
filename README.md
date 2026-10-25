@@ -44,7 +44,13 @@ App: `https://niaa-git-staging-jaden-data.vercel.app`
 
 ## 0. Prepare
 
-1. Install [Freighter](https://www.freighter.app) in both browser profiles, open it once in each, and set the network to **Testnet**. You need two Freighter accounts, one per profile.
+1. Freighter on **Testnet**, in each of the two browser profiles. Niaa builds every transaction for the Stellar test network; a Freighter on Mainnet cannot sign it, so do this before anything else:
+   1. Install Freighter from [freighter.app](https://www.freighter.app): "Add to Browser", confirm the browser's prompt. Pin it: click the puzzle-piece (extensions) icon next to the address bar and the pin next to Freighter, so its icon stays in the toolbar.
+   2. Click the Freighter icon. Choose "Create New Wallet" (or import one you already use for testing). Set a password, write down the recovery phrase, and confirm it when Freighter asks.
+   3. Switch the network. A new wallet starts on Mainnet. In the Freighter window, click the network name at the top (it reads "Main Net" or "Mainnet") and pick "Test Net" / "Testnet" in the list. If your version has no network name at the top: the gear icon (Settings), then "Network", then "Testnet".
+   4. Check it: the top of the Freighter window now says "Test Net" / "Testnet". Freighter remembers this per browser profile, but check again right before the demo; an update or a second wallet can put it back on Mainnet.
+   5. You need two Freighter accounts, one per browser profile (sponsor and changemaker). Repeat 1 to 4 in the second profile. Funding is not needed here: if Freighter offers "Fund with Friendbot", you may use it, otherwise the app's "Activate on the test network" button does the same in step 5.
+   6. If you forget: Freighter refuses to sign, or shows a network mismatch, and nothing is signed. Switch to Testnet as in 3 and click the button in the app again.
 2. Make two test accounts. Sign-up email `<name>+clerk_test@example.com` (for example `amani+clerk_test@example.com` and `ines+clerk_test@example.com`), verification code `424242`.
 3. B (changemaker): at "How will you use Niaa?" choose "I am a changemaker". Pick a theme ("Which ... fits your work?") and remember it.
 4. A (sponsor): choose "I am a sponsor" and enter an institution name (for example "Fundação Esperança"). Pick the **same theme** as B. The theme decides which activities a sponsor sees.
@@ -135,7 +141,7 @@ If it goes wrong: "Your payout wallet isn't ready for USDC yet." = finish "Activ
 - Result: "Held safely" on both screens. Open the escrow in the Trustless Work viewer.
 - Other side: B's bell says the escrow is funded.
 
-If it goes wrong: only the first signature went through = the card shows "Step 2 of 2: put the budget in"; click "Put the budget in the escrow". "Your wallet doesn't hold enough USDC for this budget." = "Add test dollars" under Payment settings. "The Changemaker's payout wallet can't receive USDC yet." = B does "Allow USDC". Freighter on mainnet = switch it to Testnet.
+If it goes wrong: only the first signature went through = the card shows "Step 2 of 2: put the budget in"; click "Put the budget in the escrow". "Your wallet doesn't hold enough USDC for this budget." = "Add test dollars" under Payment settings. "The Changemaker's payout wallet can't receive USDC yet." = B does "Allow USDC". Freighter on Mainnet = switch it to Testnet (step 0, Freighter) and click again.
 
 ## 5. Changemaker submits proof
 
